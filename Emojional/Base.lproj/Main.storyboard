@@ -18,43 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="😁" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oY-5W-tqS">
-                                <rect key="frame" x="20" y="185" width="202" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click an emoji to match how you feel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-rG-FJT">
+                                <rect key="frame" x="39" y="126" width="336" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCQ-sl-DU6">
+                                <rect key="frame" x="46" y="220" width="127" height="152"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="117"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="😶" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7e-oh-Cu2">
-                                <rect key="frame" x="192" y="693" width="202" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <state key="normal" title="😁"/>
+                                <connections>
+                                    <action selector="hitHappyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqa-8U-vMV"/>
+                                    <action selector="userTapsHappy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Elq-gI-djb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWt-Eh-1Do">
+                                <rect key="frame" x="46" y="515" width="127" height="152"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="117"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="😡" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7X-IX-dxI">
-                                <rect key="frame" x="20" y="519" width="202" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <state key="normal" title="😠"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-S0-DuU">
+                                <rect key="frame" x="226" y="345" width="127" height="152"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="117"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="😢" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkF-yz-cFG">
-                                <rect key="frame" x="192" y="348" width="202" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <state key="normal" title="😢"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2V-UD-Nep">
+                                <rect key="frame" x="226" y="655" width="127" height="152"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="117"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How you feelin?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ac-3w-ASd">
-                                <rect key="frame" x="87" y="108" width="240" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="35"/>
+                                <state key="normal" title="😐"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How you feelin?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ac-3w-ASd">
+                                <rect key="frame" x="61" y="77" width="292" height="41"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
                                 <color key="textColor" red="0.26416540191660454" green="0.58939847797927469" blue="0.21265496458295285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.74011861287049208" green="0.61721293287512813" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B2V-UD-Nep" firstAttribute="leading" secondItem="yWt-Eh-1Do" secondAttribute="trailing" constant="53" id="EUY-qL-d70"/>
+                            <constraint firstItem="yWt-Eh-1Do" firstAttribute="top" secondItem="pCQ-sl-DU6" secondAttribute="bottom" constant="143" id="IhI-2T-JR2"/>
+                            <constraint firstItem="fUp-S0-DuU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="345" id="KJA-Fe-MA9"/>
+                            <constraint firstItem="fUp-S0-DuU" firstAttribute="leading" secondItem="pCQ-sl-DU6" secondAttribute="trailing" constant="53" id="RJI-bj-dST"/>
+                            <constraint firstItem="PL7-rG-FJT" firstAttribute="centerX" secondItem="0ac-3w-ASd" secondAttribute="centerX" id="RaC-NI-Qsp"/>
+                            <constraint firstItem="yWt-Eh-1Do" firstAttribute="top" secondItem="pCQ-sl-DU6" secondAttribute="bottom" constant="143" id="VSE-XN-D1D"/>
+                            <constraint firstItem="pCQ-sl-DU6" firstAttribute="top" secondItem="PL7-rG-FJT" secondAttribute="bottom" constant="65" id="YmS-hU-CQ8"/>
+                            <constraint firstItem="PL7-rG-FJT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bqQ-6q-pdQ"/>
+                            <constraint firstItem="PL7-rG-FJT" firstAttribute="top" secondItem="0ac-3w-ASd" secondAttribute="bottom" constant="8" symbolic="YES" id="d7r-mU-9pN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yWt-Eh-1Do" secondAttribute="bottom" constant="195" id="lGH-2c-SkS"/>
+                            <constraint firstItem="B2V-UD-Nep" firstAttribute="trailing" secondItem="0ac-3w-ASd" secondAttribute="trailing" id="qUt-OK-YXS"/>
+                            <constraint firstItem="yWt-Eh-1Do" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="rH7-am-xnV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2V-UD-Nep" secondAttribute="bottom" constant="55" id="tgV-M3-0bk"/>
+                            <constraint firstItem="pCQ-sl-DU6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="xWv-x6-mrC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
